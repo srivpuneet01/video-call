@@ -21,12 +21,12 @@ const io = socketio(expressServer,{
     cors: {
         origin: [
             //"https://localhost:8181",
-            'https://192.168.18.230:8181' //if using a phone or another computer
+            "https://192.168.18.230:8081" //if using a phone or another computer
         ],
         methods: ["GET", "POST"]
     }
 });
-expressServer.listen(8181);
+expressServer.listen(8081);
 
 //offers will contain {}
 const offers = [
